@@ -9,7 +9,6 @@ namespace IdentityServerApp.Client
     {
         static void Main(string[] args)
         {
-            System.Threading.Thread.Sleep(10000);
             MainAsync().GetAwaiter().GetResult();
         }
 

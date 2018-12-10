@@ -5,6 +5,11 @@ services:
   
   identityserver-api:
     image: identityserver-api
+    depends_on:
+      - "identityserver"
 
   identityserver-client:
     image: identityserver-client
+    depends_on:
+      - "identityserver"
+      - "identityserver-api"
