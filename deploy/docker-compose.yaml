@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  identityserver: 
+    image: identityserver
+  
+  identityserver-api:
+    image: identityserver-api
+
+  identityserver-client:
+    image: identityserver-client
